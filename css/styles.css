@@ -1,0 +1,570 @@
+/*color code
+green: #648a69
+yellow: #f3d900
+light gray: eaedef;
+dark blue for fonts: #344256*/
+
+html {
+	font-size: 62.5%;	
+}
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.6rem;
+}
+
+header {
+	background-color: #fff;
+}
+
+h1 {
+	color: #344256;
+}
+
+h1,
+h2 {
+	font-family: 'Poppins', sans-serif;
+	color: #344256;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
+
+.main-menu a:hover,
+.main-menu a:active {
+	color: #c6552c;
+}
+
+.toggle-btn {
+	border: none;
+	background-color: yellow;
+	outline: none;
+	border-radius: 100px;
+}
+
+.toggle-btn:hover {
+	cursor: pointer;
+}
+
+.toggle-btn svg {
+	fill: black;
+}
+
+.icon {
+	width: 6rem;
+	height: 6rem;
+}
+
+.main-menu li {
+	line-height: 3;
+}
+
+.main-menu li a {
+	text-decoration: none;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.5rem;
+}
+
+.flex-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+}
+
+header nav {
+	z-index: 100;
+	background-color: #fff;
+	position: absolute;
+	top: 4.9rem;
+	left: 0;
+	width: 100vw;
+	overflow: hidden;
+	max-height: 0;
+	transition: max-height 0.7s ease-in-out;
+}
+
+ul.main-menu {
+	text-transform: uppercase;
+	padding-bottom: 1rem;
+	margin: 1%;
+}
+
+ul.main-menu li {
+	border-bottom: 1px solid #f5e7cb;
+}
+
+ul.main-menu li:focus-within > ul,
+ul.main-menu li > ul:focus {
+	visibility: visible;
+	opacity: 1;
+	display: block;
+}
+
+.show-nav {
+	max-height: 125rem;
+	background-color: white;
+}
+
+/*navlinks css*/
+
+.nav-links {
+  background-color: var(--black);
+  padding-bottom: 1rem;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+   }
+
+.nav-links li {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+   }
+
+.nav-links li a {
+  color: white;
+  display: block;
+}
+
+/*main css*/
+.valuable-start{
+	padding: 2.5rem;
+}
+
+.valuable-start h1 {
+	font-size: 5rem;
+}
+
+.valuable-start form {
+	display: flex;
+	justify-content: space-between;
+}
+
+.valuable-start img {
+	width: 22px;
+	height: 22px;
+}
+
+/*works page how it works css___
+*/
+.work-start {
+	padding: 2rem;
+}
+
+.work-start div {
+	padding-top: 2rem;
+}
+
+.work-start h3 {
+	color: #344256;
+	padding-bottom: 2rem;
+}
+
+/*works page image____*/
+.project-bg {
+	background: url(../img/howitworks-bg-320.png) center top/cover no-repeat;
+	width: 100%;
+	height: 30rem;
+}
+
+.project-bg .content-container {
+	font-size: 2.5rem;
+	padding-top: 13rem;
+	padding-left: 5rem;
+}
+
+/*works page container___*/
+form .message-container {
+	background-color: #648a69;
+	color: #fff;
+	padding: 3rem;
+	font-size: 2rem;
+}
+
+.red-text {
+	color: red;
+}
+
+input,
+textarea {
+	width: 100%;
+	margin-bottom: 1.5rem;
+	border: 1px solid #999;
+	border-radius: 5px;
+}
+
+textarea .message {
+	height: 40rem;
+}
+
+/*network css*/
+.network-is-here,
+.network-cards {
+	background-color: #648a69;
+}
+
+.network-is-here {
+	color: #fff;
+	padding: 2.5rem;
+}
+
+.network-is-here h2 {
+	font-size: 5rem;
+	color: #fff;
+}
+
+.network-is-here p {
+	padding-top: 1rem;
+	padding-bottom: 3rem;
+}
+
+.yellow-btn,
+.last-yellow-btn {
+	background-color: #f3d900;
+	border-radius: 10px;
+	padding: 1.5rem;
+	width: 15rem;
+	text-align: center;
+}
+
+.yellow-btn a,
+.last-yellow-btn a {
+	text-decoration: none;
+}
+
+.network-cards {
+	padding: 2rem;
+}
+.network-cards div {
+	padding: 2rem;
+	background-color: #fff;
+	border-radius: 10px;
+}
+
+.network-cards article {
+	margin-right: 2rem;
+	margin-left: 2rem;
+	padding: 2rem;
+}
+
+.network-cards p {
+	padding-bottom: 5rem;
+}
+
+.network-cards a {
+	text-decoration-color: yellow;
+}
+
+/*what can we do css*/
+
+.what-we-do {
+	margin: 2rem;
+}
+
+.horizontal-content {
+  display: flex;
+  align-items: center;
+  overflow: scroll;
+  scrollbar-width: none;
+  height: 237.7px;
+}
+
+.horizontal-content a {
+	text-decoration: none;
+	color: #344256;
+}
+
+.horizontal-content > div {
+  display: flex;
+  justify-content: space-between;
+  flex: 0 0 330px;
+  height: 187px;
+  background-color: #fff;
+  margin: 1rem 0.5rem;
+  border-radius: 3px;
+  transition: all 300ms ease-in;
+}
+
+.horizontal-content > div:hover,
+.horizontal-content > div:active {
+  flex: 0 0 346.5px;
+  height: 205.7px;
+}
+
+.horizontal-content::-webkit-scrollbar {
+  background: transparent;
+  width: 0;
+}
+
+/*why would you need us css*/
+.need-us {
+	background-color: #eaedef;
+	padding-left: 2rem;
+	padding-bottom: 5rem;
+}
+
+.need-us p {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+.need-us .smart,
+.need-us .reso,
+.need-us .support {
+	/*background: url(../img/solutions-lg.png) center top/cover no-repeat;*/
+	width: 371px;
+	height: 225px;
+	margin-bottom: 125px;
+}
+
+.text-container {
+	background-color: #fff;
+	padding: 2rem;
+}
+
+
+/*newsletter css*/
+.newsletter {
+	background-color: #648a69;
+	color: #fff;
+	padding: 2rem;
+}
+
+.newsletter h2 {
+	font-size: 5rem;
+	color: #fff;
+}
+
+.newsletter p {
+	padding-bottom: 3rem;
+}
+
+.newsletter form {
+	display: flex;
+	justify-content: space-between;
+}
+
+.email-bar {
+	width: 40rem;
+}
+
+.submit-btn {
+	width: 7rem;
+}
+
+.footer-info {
+	padding: 2rem;
+}
+
+.col-group {
+	padding-top: 2rem;
+}
+
+.col ul li {
+	padding-top: 2rem;
+}
+
+/*copyright css*/
+.copyright {
+	background-color: #648a69;
+	color: #fff;
+	padding: 2rem;
+}
+
+.copyright p {
+	padding-top: 1rem;
+}
+
+@media only screen and (min-width: 750px) {
+	.yellow-btn {
+		width: 15rem;
+	}
+
+	.network-cards div {
+		background-color: #648a69;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	article {
+		margin-bottom: 2rem;
+		background-color: #fff;
+        height: 35rem;
+		width: 25rem;
+		border-radius: 10px;
+	}
+
+	.need-us {
+		padding-bottom: 2rem;
+	}
+
+	.smart,
+	.reso,
+	.support {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.text-container p {
+		width: 27rem;
+	}
+
+	.last-yellow-btn {
+		width: 15rem;
+	}
+
+	.email-bar {
+		width: 80rem;
+    }
+
+	/*work page css*/
+	.work-start {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.work-start div {
+		width: 50%;
+	}
+
+	.project-bg {
+		background: url(../img/howitworks-bg-750.png) center top/cover no-repeat;
+		width: 100%;
+		height: 30rem;
+	}
+	.message-container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.message-container p {
+		padding-bottom: 4rem;
+	}
+
+	.message-container > div {
+		width: 49%;
+	}
+
+	.message-container div:nth-last-child(2) {
+		width: 100%;
+	}
+
+	.col-group {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+@media only screen and (min-width: 1160px) {
+	header,
+	main,
+	footer {
+		width: 1160px;
+		margin: 0 auto;
+	}
+
+	.toggle-btn {
+        display: none;
+    }
+
+    header nav {
+       	position: static;
+        width: auto;
+        max-height: 20rem;
+        overflow: visible;
+    }
+
+    .main-menu li a {
+    	display: flex;
+    	justify-content: space-between;
+    	width: 19rem;
+    }
+
+    header,
+    nav, 
+    .main-menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    header {
+        justify-content: space-between;
+    }
+
+    header nav {
+        justify-content: flex-end;
+    }
+
+    /*index css*/
+	.all-cards div {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.network-is-here {
+		width: 25%;
+	}
+
+	.network-cards div {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.network-cards article {
+		width: 25rem;
+	}
+
+	.image-need-us {
+		width: 100%;
+	}
+	
+
+	.last-yellow-btn {
+		margin-left: 2rem;
+		width: 15rem;
+	}
+
+	.email-bar {
+		width: 40rem;
+	}
+
+	.submit-btn {
+		margin-right: 70rem;
+	}
+
+	/*how it works css*/
+	.work-start div {
+		width: 25%;
+		padding-right: 2rem;
+	}
+
+	.project-bg {
+		background: url(../img/howitworks-bg-1160.png) center top/cover no-repeat;
+	}
+
+	.message-container p {
+		width: 1160px;
+	}
+
+	.col-group {
+		padding-left: 20rem;
+		padding-right: 20rem;
+	}
+}
